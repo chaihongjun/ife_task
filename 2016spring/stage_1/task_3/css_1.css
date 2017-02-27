@@ -1,0 +1,53 @@
+.main {
+    margin: 20px 20px 0 20px;
+    padding: 20px;
+    background-color: #eee;
+    border: 1px solid #999;
+    min-height: 434px;
+}
+.left {
+    position: absolute;
+    top: 41px;
+    left: 41px;
+    width: 158px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.left img {
+    width: 78px;
+    height: 78px;
+    border: 1px solid #999;
+}
+.left h2 {
+     position: absolute;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+}
+.center {
+    margin-left: 220px;
+    margin-right: 140px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.center h1 {
+    font-size: 14px;
+}
+.right {
+    position: absolute;
+    top: 41px;
+    right: 41px;
+    width: 78px;
+    padding: 0 20px 20px 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.right .logo {
+    border: 1px solid #999;
+    height: 78px;
+    width: 78px;
+    margin-top: 20px;
+}

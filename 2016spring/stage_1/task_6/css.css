@@ -1,0 +1,450 @@
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: ""
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0 auto;
+    width: 980px;
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+.header {
+    width: 892px;
+    border-bottom: 2px solid #938e8c;
+    height: 61px;
+}
+
+.header span {
+    display: inline-block;
+    background-color: rgb(212, 93,92 );
+    height: 61px;
+    width: 110px;
+}
+
+.header h1 {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 49px;
+    font-family:SimHei ;
+}
+
+.header time {
+    float: right;
+    font-size: 12px;
+    color: #d45d5c;
+    font-family: SimHei;
+    margin-top: 49px;
+}
+
+.wrap {
+    padding-top: 37px;
+}
+
+.wrap .one .datu {
+   float: left; 
+    width: 641px;
+    height: 301px;
+}
+
+.wrap .one .about {
+    float: left;
+    width: 203px;
+    height: 299px;
+    margin-left: 48px;
+    border-top: 2px solid #cc8091;
+}
+
+.wrap .one .about  h2{
+    font-family: microsoft yahei;
+    font-size: 24px;
+    text-decoration: underline;
+    color:#000;
+     line-height: 30px;
+    font-variant: small-caps;
+    margin: 0;
+
+}
+
+.wrap .one .about p{
+    font-size: 12px;
+    color: #676767;
+    font-family: SimSun;
+    margin: 0;
+}
+.wrap .one .about  p.green{
+     font-size: 116px;
+     color: #75b86b;
+     font-family: microsoft yahei;
+}
+
+
+.wrap .one .about .small{
+    margin-bottom: 0
+}
+
+.wrap .one .about span{
+    display: inline-block;
+}
+
+.left{
+    float: left;
+    margin-left: 10px;
+}
+.right {
+    float: right;
+}
+.wrap .one .about  .red {
+    color: #cc8091;
+    font-family: microsoft yahei;
+}
+.wrap .one .about  .big {
+    font-size: 55px;
+}
+.wrap .one .about  .middle{
+    font-size: 21px;
+    margin-top: 20px;
+}
+.wrap .one .about  .tiny{
+    font-size: 12px;
+}
+
+.two{
+    margin-top: 40px;
+}
+
+
+.two .content{
+    width: 641px;
+}
+
+.two .content p{
+    font-size: 12px;
+    color:rgb(118,119,119);
+    font-family: ÃƒÆ’Ã‚Â¥Ãƒâ€šÃ‚Â®ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ÃƒÆ’Ã‚Â¤Ãƒâ€šÃ‚Â½ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ;
+     line-height: 16px;
+    opacity: 0.7;
+}
+
+.content h3{
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.content .what{
+    width: 260px;
+    float: left;
+}
+.content .what h3{
+    font-size: 16px;
+    color: #418c89;
+    font-family: microsoft yahei;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.content .what p{
+    margin-right: 30px;
+    line-height: 16px;
+  
+}
+
+.content .when{
+    width: 234px;
+      float: left;
+}
+
+.content .when p {
+     margin-right: 29px;
+}
+.content .when h3{
+    font-size: 16px;
+    color: #d2994f;
+    font-family: microsoft yahei;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.content .how{
+    width: 147px;
+      float: left;
+}
+.content .how h3{
+    font-size: 16px;
+    color: #cc7680;
+    font-family: microsoft yahei;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.two .content .how    p{
+    line-height: 21px;
+}
+
+.two .content .percent{
+    margin-top: 28px;
+}
+
+.two .content .percent p{
+    color: #231815;
+}
+ .two .content .percent  span{
+    color: #cd4a48;
+}
+
+.three {
+    margin-top: 73px;
+}
+.three .zuobian{
+    float: left;
+    margin-right: 18px;
+    padding-top: 17px;
+}
+.three .zuobian .biaoti{
+    width: 415px;
+    height: 153px;
+    border-bottom:  2px solid #11456b;
+}
+
+.three .zuobian .biaoti  h3{
+    font-family: SimHei;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 40px;
+    color: #11456b;
+}
+.three .zuobian .biaoti h3 em{
+    font-family: SimHei;
+    font-size: 72px;
+    line-height: 40px;
+    color: #f5e327;
+    font-weight: bold;
+    margin-right: 19px;
+    margin-top: 14px;
+}
+
+
+.three .zuobian .biaoti  h3 span:last-child{
+    display: block;
+}
+
+.three .zuobian .biaoti  h3:last-child{
+    font-size: 33px;
+    line-height: 33px;
+    margin-top: 14px;
+}
+.three .zuobian .zhengwen{
+    margin-top: 25px;
+    width: 415px;
+}
+.three .zuobian .zhengwen span{
+    font-family: microsoft yahei;
+    font-size: 70px;
+    color: #f5e327;
+    float: left;
+    margin-right: 8px;
+}
+.three .zuobian .zhengwen img{
+   float: right;
+   margin: 20px 6px 15px 22px;
+   width: 167px;
+   height: 288px;
+}
+.three .zuobian .zhengwen p{
+    font-size: 12px;
+    line-height: 17px;
+}
+.indent{
+    text-indent: 2em;
+}
+.three .youbian{
+    float: left;
+}
+.three .youbian .up{
+    width: 458px;
+    height: 275px;
+    position: relative;
+}
+.three .youbian img {
+    width: 458px;
+    height: 275px;
+    z-index: 1;
+}
+
+.three .youbian .cover{
+    width: 458px;
+    height: 61px;
+    background: #000;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.4;
+}
+.three .youbian  .cover   .tiao{
+    width: 3px;
+    height: 44px;
+   background-color: #72b16a;
+    display: inline-block;
+    margin-left: 37px;
+
+    margin-top: 8px;
+}
+.three .youbian  .cover  .white{
+    font-family: microsoft yahei;
+    font-size: 26px;
+    line-height: 26px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 17px;
+}
+.three .youbian  .cover  .green{
+    font-family: microsoft yahei;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgb(114, 177, 106);
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 17px;
+}
+
+.three .youbian .down{
+  background-color: rgb(238, 237, 214);
+  width: 459px;
+  height: 318px;
+  margin-top: 60px;
+}
+
+.three .youbian .down .duan{
+    width: 459px;
+    height: 158px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.three .youbian .down .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid rgb(16, 68, 107);
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 31px;
+
+}
+
+.three .youbian .down .duan span{
+    font-style: italic;
+}
+
+.three .youbian .down p{
+      font-family: simsun;
+      font-size: 16px;
+      line-height: 20px;
+}
+
+.three .youbian .down .hong{
+    width: 260px;
+    height: 160px;
+    background-color: rgb(212, 93, 92);
+    color: #fff;
+    float: left;
+}
+
+.three .youbian .down .hong  .zero{
+    font-family: microsoft yahei;
+    font-size: 110px;
+    float: left;
+    line-height: 160px;
+    margin-left: 8px;
+}
+
+.three .youbian .down .hong .hello {
+     height: 86px;
+     border-left: 2px solid #fff;
+     float: right;
+     margin-top: 37px;
+     margin-right: 17px;
+     padding-left: 7px;
+}
+.three .youbian .down .hong .hello .big{
+    font-size: 21px;
+    line-height: 24px;
+    font-family: SimHei;
+    font-style: italic;
+    padding: 1px;
+}
+.three .youbian .down .hong .hello .small{
+    font-size: 12px;
+    line-height: 6px;
+    font-family: SimHei;
+    padding: 4px;
+}
+
+.three .youbian .down .world{
+    float: right;
+    width: 199px;
+    font-family: SimHei;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: italic;
+    color: #5a5b5b;
+}
+
+.three .youbian .down .world p{
+    padding-left: 11px;
+    margin-right: 9px;
+    word-spacing: -2px;
+    padding-top: 16px;
+}
+
+.three .youbian .down .world span{
+    font-size: 72px;
+    line-height: 30px;
+    font-style: normal;
+    color: #d45d5c;
+}
+.three .youbian .down .world span:first-child{
+    float: left;
+    margin-top: 11px;
+    margin-bottom: -46px;
+    margin-left: -40px;
+    margin-right: 13px;
+    padding: 0px 1px 12px 0;
+}
+.three .youbian .down .world span:last-child{
+     float: right;
+    margin-top: 15px;
+    margin-right: -24px;
+}
+
+footer{
+    border-top: 1px solid #938e8c;
+    margin-top: 38px;
+}
+
+footer span{
+    float: right;
+    color: #d45d5c;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: SimHei;
+}

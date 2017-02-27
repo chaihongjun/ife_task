@@ -1,0 +1,842 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.wrap {
+    width: 100%;
+    min-width: 1280px;
+}
+
+nav {
+    width: 90%;
+    height: 56px;
+    margin: 0 auto;
+    /*             display: flex;
+            flex-direction: row;
+               justify-content: space-between; */
+}
+
+nav .logo {
+    font-family: SimHei;
+    font-size: 21px;
+    line-height: 56px;
+    float: left;
+    width: 105px;
+    margin: 0;
+    text-align: right;
+    color: #393a3a;
+    background: url(images/logo.png)no-repeat left;
+}
+
+nav .login {
+    font-family: microsoft yahei;
+    font-size: 14px;
+    line-height: 56px;
+    float: right;
+    height: 56px;
+    margin-left: 44px;
+    color: #e74f4d;
+}
+
+nav ul {
+    font-family: microsoft yahei;
+    font-size: 14px;
+    line-height: 56px;
+    float: right;
+    height: 56px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 64px;
+    margin-left: 44px;
+    color: #787b83;
+}
+
+nav li:first-child a {
+    border-bottom: 3px solid #e74f4d;
+}
+
+nav a {
+    display: block;
+}
+
+.one {
+    margin-top: 3px;
+}
+
+.one .banner {
+    height: 690px;
+    background: url('images/banner.jpg')no-repeat;
+    background-size: cover;
+}
+
+.one .mask {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    height: 690px;
+    background: rgba(205, 204, 204, .2);
+    -ms-flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.one .mask .slogan {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 130px;
+    text-align: left;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.one .slogan {
+    font-family: microsoft yahei;
+    color: #fff;
+}
+
+.one .slogan h1 {
+    font-size: 60px;
+}
+
+.one .slogan p {
+    font-size: 21px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.one .slogan .btn {
+    font-size: 30px;
+    line-height: 60px;
+    display: block;
+    width: 330px;
+    height: 64px;
+    margin-top: 66px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #fff;
+    border: 1px solid #e74f4d;
+    background: #e74f4d;
+}
+
+.two {
+    font-size: 0;
+    height: 250px;
+}
+
+.two .box {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.two .box .border {
+    width: 100%;
+    margin-top: 45px;
+    border-right: 2px solid rgb(152, 152, 152);
+}
+
+.two .row:last-child .border {
+    border-right: 0;
+}
+
+.two .box p {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.two .row {
+    font-family: SimHei;
+    font-size: 14px;
+    line-height: 18px;
+    display: inline-block;
+    width: 25%;
+    color: #767777;
+}
+
+.two .circle {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background: url('images/circle.jpg')no-repeat center center;
+}
+
+.two .flag {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background: url('images/flag.jpg')no-repeat center center;
+}
+
+.two .flower {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background: url('images/flower.jpg')no-repeat center center;
+}
+
+.two .tian {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background: url('images/tian.png')no-repeat center center;
+}
+
+.three {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    background: #edecec;
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.three h2 {
+    font-family: SimHei;
+    font-size: 53.59px;
+    line-height: 56.6px;
+    opacity: .5;
+    color: #323333;
+}
+
+.three .big-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 48px;
+    background: url(images/big-logo.png)no-repeat;
+}
+
+.four {
+    height: 340px;
+    background: url('images/kanditu.jpg')no-repeat;
+    background-size: cover;
+}
+
+.four .cover {
+    font-family: microsoft yahei;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    background: rgba(238, 214, 214, .2);
+    -ms-flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.four .cover h3 {
+    font-size: 21px;
+    line-height: 41.88px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.four .cover hr {
+    width: 30px;
+    height: 1px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.four .cover p {
+    font-size: 12px;
+    line-height: 31.27px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.four form {
+    width: 80%;
+    margin-top: 52px;
+}
+
+.four .area {
+    font-family: microsoft yahei;
+    /*    margin-top: 52px;
+    width: 80%; */
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.four .area select {
+    font-size: 12px;
+    line-height: 26.55px;
+    display: block;
+    width: 236px;
+    padding-left: 5px;
+    text-align: center;
+    opacity: .7;
+    color: #323333;
+    background: url('images/select.jpg')no-repeat 210px center #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.four .area option {
+    font-family: microsoft yahei;
+    font-size: 12px;
+    line-height: 26px;
+    color: #323333;
+    background-color: #e3e2e4;
+}
+
+.four .area option:hover {
+    font-family: microsoft yahei;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    background: #bf4f49;
+}
+
+.search {
+    font-size: 14px;
+    line-height: 26.55px;
+    display: block;
+    width: 236px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #fff;
+    background: #be4e48;
+}
+
+.five {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    height: 606px;
+    padding: 0 134px;
+    background: #f7f7f7;
+    -ms-flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.five img {
+    display: block;
+    width: 100%;
+}
+
+.five .thumbnail {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.five .thumbnail .pic {
+    padding: 7px;
+    border: 1px solid #cfcfcf;
+    background-color: #fff;
+}
+
+.five .info {
+    margin-top: 10px;
+}
+
+.five .info h3 {
+    font-family: microsoft yahei;
+    font-size: 14px;
+    line-height: 26.55px;
+    color: #636464;
+}
+
+.five .info p {
+    font-family: microsoft yahei;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #818181;
+}
+
+.five .info:nth-child(1) h3 {
+    font-family: SimHei;
+    font-size: 30px;
+    text-indent: 30px;
+    letter-spacing: 30px;
+}
+
+.five .info:nth-child(1) p {
+    margin: 5px auto;
+}
+
+.six {
+    height: 565px;
+}
+
+.six .shoes {
+    font-family: microsoft yahei;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    /* width: 851px; */
+    width: 66%;
+    height: 100%;
+    color: #fff;
+    background: url('images/shoes.jpg')no-repeat;
+    background-size: cover;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.six .shoes h2 {
+    font-size: 49.47px;
+    line-height: 75.58px;
+    margin-top: -50px;
+}
+
+.six .shoes h3 {
+    font-size: 157.79px;
+    font-weight: lighter;
+    line-height: 241.06px;
+    margin-top: -50px;
+}
+
+.six .shoes .triangle-left {
+    position: absolute;
+    top: 47%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #fff;
+    border-bottom: 15px solid transparent;
+}
+
+.six .description {
+    font-family: SimSun;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 34%;
+    height: 100%;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.six .description h3 {
+    font-size: 22px;
+    color: #000;
+}
+
+.six h3 span {
+    color: #e74f4d;
+}
+
+.six .description p {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 30px 117px 50px;
+    color: #aaa;
+}
+
+.six .description .more {
+    font-family: microsoft yahei;
+    font-size: 12px;
+    line-height: 34.36px;
+    display: block;
+    padding: 4px 28px;
+    text-align: center;
+    color: #e25c60;
+    border: 1px solid #e25c60;
+}
+
+.six .description .dot {
+    margin-top: 25px;
+}
+
+.six .description i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+}
+
+.six .description .active {
+    background: #aaa;
+}
+
+.seven {
+    height: 520px;
+}
+
+.seven .card {
+    font-family: SimHei;
+    font-size: 21px;
+    float: left;
+    width: 66%;
+    height: 100%;
+    text-align: center;
+}
+
+.seven .card .more {
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.seven .card .red {
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    background: #e74f4d;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.seven .card p {
+    font-size: 21px;
+    line-height: 30.36px;
+}
+
+.seven .red hr {
+    width: 30px;
+    height: 1px;
+    margin: 25px auto;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.seven .red .more {
+    display: block;
+    padding: 11px 42px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.seven .card .white {
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    color: #e74f4d;
+    background: #fff;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.seven .white p {
+    color: #323333;
+}
+
+.seven .white hr {
+    width: 30px;
+    height: 1px;
+    margin: 25px auto;
+    border: 1px solid #ababaa;
+    background-color: #ababaa;
+}
+
+.seven .white .more {
+    display: block;
+    padding: 11px 42px;
+    color: #e74f4d;
+    border: 1px solid #e74f4d;
+}
+
+.seven .girl {
+    float: right;
+    width: 34%;
+    height: 100%;
+    background: url('images/girl.jpg')no-repeat;
+    background-size: cover;
+}
+
+.seven .girl .cover {
+    position: relative;
+    height: 100%;
+    background: rgba(154, 153, 153, .4);
+}
+
+.seven .girl .triangle-right {
+    position: absolute;
+    top: 47%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 30px solid #fff;
+}
+
+.eight {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    -ms-flex-direction: column;
+}
+
+.eight .panle {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.eight .panle h3 {
+    font-family: SimHei;
+    font-size: 21px;
+    line-height: 30.36px;
+    color: #323333;
+}
+
+.eight .panle hr {
+    width: 30px;
+    height: 1px;
+    margin: 10px 0;
+    border: 1px solid #e74f4d;
+    background-color: #e74f4d;
+}
+
+.eight .panle p {
+    font-family: microsoft yahei;
+    font-size: 12px;
+    line-height: 18px;
+    width: 33%;
+    text-align: center;
+    color: #aaa;
+}
+
+.eight .message {
+    font-size: 0;
+    height: 40%;
+    margin: 0 11%;
+}
+
+.eight .message .quotes {
+    font-family: SimHei;
+    float: left;
+    width: 29%;
+}
+
+.eight .quotes h4 {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #231815;
+}
+
+.eight .quotes .q3 h4,
+.eight .quotes .q3 .more {
+    margin-bottom: 0;
+}
+
+.eight .quotes p {
+    font-size: 12px;
+    line-height: 21px;
+    color: #231815;
+}
+
+.eight .quotes .more {
+    font-size: 12px;
+    line-height: 19.45px;
+    float: right;
+    margin-bottom: 37px;
+    color: #231815;
+}
+
+.eight .message .contact {
+    font-family: SimHei;
+    font-size: 0;
+    float: right;
+    width: 63%;
+}
+
+.eight .message input {
+    font-family: SimHei;
+    font-size: 12px;
+    display: inline-block;
+    width: 48%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 0;
+    background: #edecee;
+}
+
+.eight .message input:nth-child(2n+1) {
+    margin-right: 25px;
+}
+
+.eight .message textarea {
+    width: 100%;
+    height: 127px;
+    border: 0;
+    background: #edecee;
+}
+
+.eight .message button {
+    font-family: SimSun;
+    font-size: 14px;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    color: #323333;
+    border: 0;
+    background: #edecee;
+}
+
+footer {
+    font-family: SimSun;
+    position: relative;
+    height: 416px;
+    color: #fff;
+    background: #32363e;
+}
+
+footer .focus {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 358px;
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+footer .focus h3 {
+    font-size: 21px;
+    line-height: 48.37px;
+}
+
+footer .focus p {
+    font-size: 12px;
+    line-height: 18px;
+    width: 37%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer .focus form {
+    font-size: 0;
+    margin-bottom: 38px;
+}
+
+footer .focus input {
+    font-family: microsoft yahei;
+    font-size: 14px;
+    line-height: 26.97px;
+    display: inline-block;
+    width: 430px;
+    height: 40px;
+    padding: 8px;
+}
+
+footer .focus button {
+    font-family: microsoft yahei;
+    font-size: 15px;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    background: #6f7278;
+}
+
+footer .sns i {
+    padding: 10px;
+}
+
+footer .top {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 58px;
+    padding: 0 8%;
+    background: #2f3038;
+}
+
+footer .top a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .top span:first-child {
+    line-height: 58px;
+    float: left;
+}
+
+footer .top span:last-child {
+    line-height: 58px;
+    float: right;
+}

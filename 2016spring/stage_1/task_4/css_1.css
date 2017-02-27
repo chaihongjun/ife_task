@@ -1,0 +1,44 @@
+.main {
+    background-color: #ccc;
+    border: 1px solid #999;
+    height: 200px;
+    width: 400px;
+     /* 水平垂直居中*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    /* 宽度一半的负值*/
+    margin-top: -100px;
+    /* 高度一半的负值*/
+}
+
+.circle1 {  /*左上角*/
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    /*画扇形*/
+    width: 0;
+    height: 0;
+    border-radius: 50px;
+    border-width: 50px;
+    border-style: solid;
+    border-color: #fc0 transparent transparent transparent;
+    overflow: hidden;
+    transform: rotate(135deg);
+}
+
+.circle2 {   /* 右下角*/
+    position: absolute;
+    top: 150px;
+    left: 350px;
+     /*画扇形*/
+    width: 0;
+    height: 0;
+    border-radius: 50px;
+    border-width: 50px;
+    border-style: solid;
+    border-color: #fc0 transparent transparent transparent;
+    overflow: hidden;
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,368 @@
+/*
+设计稿宽度640px;
+1rem=设计稿宽度/16;
+即:
+1rem=40px;
+元素的rem单位=实际测量尺寸px/40px
+ */
+
+* {
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    outline-style: none;
+}
+
+body {
+    font-family: SimHei;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    height: 1.825rem;
+    font-size: 0;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(145, 212, 218); 
+}
+
+header span a {
+    display: inline-block;
+    position: absolute;
+    left: .45rem;
+    height: 1.825rem;
+    font-size: .7rem;
+    line-height: 1.825rem;
+    color: #fff;
+}
+
+h1 {
+    display: inline-block;
+    height: 1.825rem;
+    font-size: .7rem;
+    line-height: 1.825rem;
+}
+
+nav {
+    font-size: .6rem;
+    color: #000;
+}
+
+nav ul {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 1.875rem;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+nav ul li {
+    width: 20%;
+    height: 1.875rem;
+    line-height: 1.875rem;
+    text-align: center;
+}
+
+nav ul li:nth-child(2) {
+    border-bottom: .1rem solid rgb(145, 212, 218);
+}
+
+nav ul a {
+    display: block;
+    color: #000;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+.tags {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: .075rem solid #ccc;
+    width: 93.75%;
+    height: 4.75rem;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.tags .tag {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.tags .tag img {
+    margin-bottom: .55rem;
+    width: 2.0rem;
+}
+
+.tags .tag p {
+    font-size: .55rem;
+    text-align: center;
+}
+
+.columns {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 6.75rem;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.columns .column {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 6.75rem;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.columns .vertical {
+    width: .025rem;
+    height: 5.4rem;
+    background-color: #eee;
+}
+
+.columns .column img {
+    display: block;
+    width: 2.0rem;
+    height: 3.0rem;
+}
+
+.columns .column:last-child img {
+    display: block;
+    width: 3.25rem;
+    height: 3.0rem;
+}
+
+.columns .column h3 {
+    margin-top: .15rem;
+    margin-bottom: .25rem;
+    font-size: .7rem;
+}
+
+.columns .column p {
+    font-size: .55rem;
+}
+
+hr.horizontal {
+    width: 100%;
+    height: .575rem;
+    background-color: #eee;
+}
+
+.module-one {
+    height: 10.625rem;
+}
+
+.module-one h4 {
+    margin: 0 auto;
+    border-bottom: .05rem solid #ccc;
+    width: 93.75%;
+    height: 1.9rem;
+    font-size: .75rem;
+    line-height: 1.9rem;
+}
+
+.module-one .module-cell {
+    margin: 0 auto;
+    padding-top: .2rem;
+    width: 93.75%;
+    height: 8.75rem;
+}
+
+.module-one .module-cell .cell {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: .4rem;
+    height: 3.675rem;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.module-one .module-cell img {
+    display: block;
+    margin-right: .375rem;
+    width: 3.95rem;
+    height: 3.7rem;
+}
+
+.module-one .module-cell .words {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 11.0rem;
+    height: 3.675rem;
+    font-size: .55rem;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.module-one .module-cell .words p {
+    width: 5.1rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    text-align: center;
+    background-color: #eee;
+}
+
+.desc {
+    height: 8.05rem;
+}
+
+.desc .news {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: .025rem solid #ccc;
+    padding: .425rem;
+    height: 4.025rem;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.desc .news img {
+    display: block;
+    width: 4.5rem;
+    height: 3.2rem;
+}
+
+.desc .news .info {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: .425rem;
+    width: 8.925rem;
+    height: 3.2rem;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.desc .news h4 {
+    font-size: .7rem;
+}
+
+.desc .news span {
+    font-size: .55rem;
+    color: #ccc;
+}
+
+.other {
+    height: 6.25rem;
+}
+
+.other h4 {
+    padding-left: .425rem;
+    height: 1.65rem;
+    font-size: .55rem;
+    line-height: 1.65rem;
+}
+
+.other .imgs {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 .425rem;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.other img {
+    display: block;
+    width: 4.95rem;
+    height: 3.25rem;
+}
+
+.other span {
+    padding-left: .425rem;
+    font-size: .55rem;
+    color: #ccc;
+}
+
+footer {
+    height: 2.175rem;
+    background-color: #eee;
+}

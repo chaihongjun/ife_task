@@ -1,0 +1,31 @@
+table thead {
+    color: #fff;
+    background-color: #000;
+}
+
+table tr:nth-child(even) {
+    background-color: #eee;
+    color: #000;
+}
+
+table tbody tr:nth-child(1),
+table tbody tr:nth-child(2),
+table tbody tr:nth-child(3) {
+    color: #f00;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    transition: width, border, 1s;
+}
+
+input:focus {
+    width: 300px;
+    border: cornflowerblue;
+}
+
+.carousel{
+	 width: 200px;
+	 height: 100px;
+}
